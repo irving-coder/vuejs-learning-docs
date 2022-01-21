@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.demo{
+  margin-top: 1em;
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-family: sans-serif;
+  user-select: none;
+  overflow-x: auto;
+}
