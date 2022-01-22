@@ -12,8 +12,10 @@
   <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-  <div id="counter">
-    Counter: {{counter}}
+  <div id="bind-attribute">
+    <span v-bind:title='message'>
+      Pon tu cursor sobre mi unos segundos para ver mi 'titulo' enlazado de manera dinámica
+    </span>
   </div>
   
   <script type="text/javascript" src="./js/main.js"></script>

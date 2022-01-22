@@ -1,14 +1,9 @@
-const Counter = {
+const AttributeBinding = {
   data(){
-    return { // Dentro del parentésis hay un objeto JSON. Por eso no lleva ;
-      counter: 0
+    return {
+      message: 'Cargaste esta página el ' + new Date().toLocaleString()
     }
-  },
-  mounted(){
-    setInterval(() => {
-      this.counter++;
-    }, 1000);
   }
 }
 
-Vue.createApp(Counter).mount('#counter');
+Vue.createApp(AttributeBinding).mount('#bind-attribute');
