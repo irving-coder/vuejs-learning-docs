@@ -12,10 +12,9 @@
   <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-  <div id="bind-attribute">
-    <span v-bind:title='message'>
-      Pon tu cursor sobre mi unos segundos para ver mi 'titulo' enlazado de manera dinámica
-    </span>
+  <div id="event-handling">
+    <p>{{message}}</p>
+    <button v-on:click='mensajeAlReves'>Mensaje al revés</button>
   </div>
   
   <script type="text/javascript" src="./js/main.js"></script>

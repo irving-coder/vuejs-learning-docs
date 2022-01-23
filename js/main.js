@@ -1,9 +1,17 @@
-const AttributeBinding = {
+const EventHandling = {
   data(){
     return {
-      message: 'Cargaste esta página el ' + new Date().toLocaleString()
+      message: 'Este es el mensaje'
+    }
+  },
+  methods: {
+    mensajeAlReves(){
+      this.message = this.message
+        .split('')
+        .reverse()
+        .join('')
     }
   }
 }
 
-Vue.createApp(AttributeBinding).mount('#bind-attribute');
+Vue.createApp(EventHandling).mount('#event-handling');
