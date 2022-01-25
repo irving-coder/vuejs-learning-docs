@@ -1,17 +1,9 @@
-const EventHandling = {
+const ToWayBinding = {
   data(){
     return {
-      message: 'Este es el mensaje'
-    }
-  },
-  methods: {
-    mensajeAlReves(){
-      this.message = this.message
-        .split('')
-        .reverse()
-        .join('')
+      message: 'Hola Vue !'
     }
   }
 }
 
-Vue.createApp(EventHandling).mount('#event-handling');
+Vue.createApp(ToWayBinding).mount('#to-way-binding');
