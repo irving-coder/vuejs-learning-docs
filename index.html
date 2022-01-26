@@ -12,8 +12,10 @@
   <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-  <div id="to-way-binding">
-    <p>{{message}}</p>
+  <div id="conditional-if">
+    <span v-if='message=="rojo"'>
+      <p>Has escrito '{{message}}' para que se visualice este mensaje</p>
+    </span>
     <input type="text" v-model="message">
   </div>
   

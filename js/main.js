@@ -1,4 +1,4 @@
-const ToWayBinding = {
+const ConditionalIf = {
   data(){
     return {
       message: 'Hola Vue !'
@@ -6,4 +6,4 @@ const ToWayBinding = {
   }
 }
 
-Vue.createApp(ToWayBinding).mount('#to-way-binding');
+Vue.createApp(ConditionalIf).mount('#conditional-if');
