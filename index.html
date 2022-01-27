@@ -12,11 +12,10 @@
   <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-  <div id="conditional-if">
-    <span v-if='message=="rojo"'>
-      <p>Has escrito '{{message}}' para que se visualice este mensaje</p>
-    </span>
-    <input type="text" v-model="message">
+  <div id="bucles">
+    <ul>
+      <li v-for="elemento in lista">{{elemento.texto}}</li>
+    </ul>
   </div>
   
   <script type="text/javascript" src="./js/main.js"></script>
